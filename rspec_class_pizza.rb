@@ -1,3 +1,10 @@
-require 'rspec'
+class Pizza
+	attr_reader :name, :description, :time_baked
 
-require_relative 'rspec_tests'
+	def initialize(args)
+		@name = args[:name]
+		@description = args[:description]
+		@time_baked = args[:time_baked]
+	end
+end
+
