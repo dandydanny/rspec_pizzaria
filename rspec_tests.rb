@@ -12,6 +12,18 @@ describe Pizza do
 		expect(pizza.description).to exist	
 	end
 
+	it "should have a time_baked attribute" do
+		expect(pizza.time_baked).to exist	
+	end
+
+
+	it "should have a time_baked default of 0" do
+		expect(pizza.time_baked).to eq 0	
+	end
+
+
+
+
 	#stuff!
 
 
