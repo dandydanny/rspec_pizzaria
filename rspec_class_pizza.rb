@@ -1,5 +1,3 @@
-# require_relative 'rspec_tests'
-
 class Pizza
 
 	attr_reader :name
