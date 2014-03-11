@@ -1,9 +1,18 @@
+require 'rspec'
+require_relative 'rspec_class_pizza'
+
 describe Pizza do
 	let(:pizza) {Pizza.new(name: "Supreme", description: "everything", time_baked: 25)}
 
-	it "has a first name" do
-		expect(ryan.name).to eq "Supreme"
+	it "has a name" do
+		expect(pizza.name).to eq "Supreme"
 	end
-end
 
-XTRA CODE
+	it "should have a description" do
+		expect(pizza.description).to exist	
+	end
+
+	#stuff!
+
+
+end
