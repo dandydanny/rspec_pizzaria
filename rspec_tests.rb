@@ -9,7 +9,7 @@ describe Pizza do
 	end
 
 	it "should have a description" do
-		expect(pizza.description).to exist
+		expect(pizza.description).to exist	
 	end
 
 
