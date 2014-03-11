@@ -39,6 +39,11 @@ describe Pizza do
 	end
 
 
+	it "pizza bake time should be 900" do
+		pizza.required_bake_time.to eq 900
+	end
+
+
 
 	#stuff!
 
