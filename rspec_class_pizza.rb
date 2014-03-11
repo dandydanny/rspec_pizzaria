@@ -7,5 +7,9 @@ class Pizza
 		@time_baked = (args[:time_baked] || 0)
 		@toppings = args[:toppings]
 	end
+
+	def required_bake_time 
+		900
+	end
 end
 
