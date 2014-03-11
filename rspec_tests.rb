@@ -40,9 +40,21 @@ describe Pizza do
 
 
 	it "pizza bake time should be 900" do
-		pizza.required_bake_time.to eq 900
+		expect(pizza.required_bake_time).to eq 900
 	end
 
+	context "#bake_time" do 
+		it "time_baked should equal 0" do 
+			expect(pizza.time_baked).to eq 0
+		end
+
+		it "increments time baked" do 
+			expect{ 
+				pizza.bake(60)
+				pizza.time_baked = 60
+			}
+		end
+	end
 
 
 	#stuff!
